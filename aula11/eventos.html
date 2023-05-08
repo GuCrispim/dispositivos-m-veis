@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
         interagindo...
     </div>
     <script>
@@ -27,6 +27,14 @@
         }
         function entrar(){
             document.getElementById("area").textContent = "Entrou"
+            document.getElementById("area").style.color = "blue"
+        }
+        function sair(){
+            document.getElementById("area").textContent = "Saiu";
+            document.getElementById("area").style.background = "rgb(929, 747, 203)"
+        }
+        function pressionando(){
+            
         }
     </script>
 </body>
